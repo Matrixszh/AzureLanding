@@ -59,8 +59,8 @@ export const HeroParallax = ({
     <div
       ref={ref}
       className="
-        relative h-[350vh] w-100%
-        py-40 antialiased flex flex-col
+        relative h-100% w-100%
+        py-4 antialiased flex flex-col
         overflow-x-hidden overflow-y-hidden
         [contain:paint]
       "
