@@ -103,7 +103,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="lg:w-7xl w-[50vh] relative mx-auto py-20 md:py-40 px-4   left-0 top-0">
+    <div className=" lg:w-7xl relative mx-auto py-20 md:py-40 px-4 w-[50vh]  left-0 top-0">
       <h1 className="text-4xl md:text-7xl font-bold dark:text-white">
         The Ultimate <br /> development studio
       </h1>
@@ -139,7 +139,6 @@ export const ProductCard = ({
       className="group/product h-96 w-[30rem] relative shrink-0"
     >
       <a
-
         className="block group-hover/product:shadow-2xl "
       >
         <img
