@@ -59,7 +59,7 @@ export const HeroParallax = ({
     <div
       ref={ref}
       className="
-        relative h-[350vh] w-full
+        relative h-[350vh] w-100%
         py-40 antialiased flex flex-col
         overflow-x-hidden overflow-y-hidden
         [contain:paint]
@@ -114,7 +114,7 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl w-full relative mx-auto py-20 md:py-40 px-4 left-0 top-0">
+    <div className="max-w-7xl w-[100vw] relative mx-auto py-20 md:py-40 px-4 left-0 top-0">
       <h1 className="text-4xl md:text-7xl font-bold dark:text-white">
         The Ultimate <br /> development studio
       </h1>
