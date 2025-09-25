@@ -1,3 +1,4 @@
+import { ThreeDCardDemo } from "@/components/3Dcard";
 import { LayoutTextFlipDemo } from "@/components/FlipText";
 import { HeroParallaxDemo } from "@/components/HeroParallax";
 import { NavbarDemo } from "@/components/ResizableNavbar";
@@ -10,7 +11,7 @@ export default function Home() {
         <HeroParallaxDemo/>
         <div className="pb-10"></div>
         <LayoutTextFlipDemo/>
-        
+        <ThreeDCardDemo/>
     </div>
   );
 }
