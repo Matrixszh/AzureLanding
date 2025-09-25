@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 export function LayoutTextFlipDemo() {
   return (
     <div>
-      <motion.div className="relative mx-4 my-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-0 sm:mb-0 sm:flex-row">
+      <motion.div className="text-4xl lg:text-10xl relative mx-4 my-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-0 sm:mb-0 sm:flex-row">
         <LayoutTextFlip
           text="Welcome to "
           words={["Aceternity UI", "Fight Club", "The Matrix", "The Jungle"]}
