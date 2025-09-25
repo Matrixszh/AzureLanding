@@ -8,8 +8,6 @@ import {
   MotionValue,
 } from "motion/react";
 
-
-
 export const HeroParallax = ({
   products,
 }: {
@@ -22,7 +20,9 @@ export const HeroParallax = ({
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
-  const ref = React.useRef(null);
+
+  const ref = React.useRef<HTMLDivElement | null>(null);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
@@ -54,56 +54,67 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="
+        relative h-[350vh] w-full
+        py-40 antialiased flex flex-col
+        overflow-x-hidden overflow-y-hidden
+        [contain:paint]
+      "
     >
       <Header />
-      <motion.div
-        style={{
-          rotateX,
-          rotateZ,
-          translateY,
-          opacity,
-        }}
-        className=""
-      >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
+
+      {/* 3D context inside; outer remains the clipping boundary */}
+      <div className="relative [perspective:1000px] [transform-style:preserve-3d]">
+        <motion.div
+          style={{
+            rotateX,
+            rotateZ,
+            translateY,
+            opacity,
+          }}
+        >
+          <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+            {firstRow.map((product) => (
+              <ProductCard
+                product={product}
+                translate={translateX}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
+
+          <motion.div className="flex flex-row mb-20 space-x-20">
+            {secondRow.map((product) => (
+              <ProductCard
+                product={product}
+                translate={translateXReverse}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
+
+          <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+            {thirdRow.map((product) => (
+              <ProductCard
+                product={product}
+                translate={translateX}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
-          {secondRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateXReverse}
-              key={product.title}
-            />
-          ))}
-        </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
-        </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 };
 
 export const Header = () => {
   return (
-    <div className=" lg:w-7xl relative mx-auto py-20 md:py-40 px-4 w-[50vh]  left-0 top-0">
+    <div className="max-w-7xl w-full relative mx-auto py-20 md:py-40 px-4 left-0 top-0">
       <h1 className="text-4xl md:text-7xl font-bold dark:text-white">
         The Ultimate <br /> development studio
       </h1>
@@ -138,9 +149,7 @@ export const ProductCard = ({
       key={product.title}
       className="group/product h-96 w-[30rem] relative shrink-0"
     >
-      <a
-        className="block group-hover/product:shadow-2xl "
-      >
+      <a className="block group-hover/product:shadow-2xl">
         <img
           src={product.thumbnail}
           height="600"
