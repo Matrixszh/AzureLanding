@@ -1,7 +1,5 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-
 import React, {
   createContext,
   useState,
@@ -9,6 +7,11 @@ import React, {
   useRef,
   useEffect,
 } from "react";
+
+// Utility function for className merging (simplified version)
+const cn = (...classes: (string | undefined)[]) => {
+  return classes.filter(Boolean).join(' ');
+};
 
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
@@ -45,11 +48,12 @@ export const CardContainer = ({
     setIsMouseEntered(false);
     containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
   };
+
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-20 flex items-center justify-center",
+          "flex items-center justify-center",
           containerClassName
         )}
         style={{
@@ -86,7 +90,7 @@ export const CardBody = ({
   return (
     <div
       className={cn(
-        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "h-96 w-80 [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d]",
         className
       )}
     >
