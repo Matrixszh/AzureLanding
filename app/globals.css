@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* Base theme tokens */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* App base typography/colors */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hard clamp horizontal overflow; keep vertical scroll normal */
+html, body, #__next {
+  max-width: 100%;
+  overflow-x: clip;         /* strict horizontal clamp */
+  overflow-y: auto;         /* normal vertical scrolling */
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: contain;
+}
+
+/* Reinforce the clamp on smaller screens */
+@media (max-width: 768px) {
+  html, body, #__next {
+    overflow-x: clip;
+  }
+}
+
+/* Optional paint isolation wrapper for transform-heavy pages */
+.app-frame {
+  overflow-x: clip;
+  overflow-clip-margin: 0;
+  contain: paint;           /* isolate painting to the frame */
+  position: relative;
+}
+
+/* Prevent media from forcing horizontal overflow */
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+@theme inline {
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+ 
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
