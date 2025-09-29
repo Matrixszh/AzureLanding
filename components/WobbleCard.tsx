@@ -20,7 +20,7 @@ export function WobbleCardDemo() {
           </p>
         </div>
         <img
-          src="/linear.webp"
+          src="/vs2.jpg"
           width={500}
           height={500}
           alt="linear demo image"
@@ -47,7 +47,7 @@ export function WobbleCardDemo() {
           </p>
         </div>
         <img
-          src="/linear.webp"
+          src="/vs3.jpg"
           width={500}
           height={500}
           alt="linear demo image"

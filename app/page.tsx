@@ -2,6 +2,7 @@ import { ThreeDCardDemo } from "@/components/3Dcard";
 import { LayoutTextFlipDemo } from "@/components/FlipText";
 import { HeroParallaxDemo } from "@/components/HeroParallax";
 import { NavbarDemo } from "@/components/ResizableNavbar";
+import { WobbleCardDemo } from "@/components/WobbleCard";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <div className="pb-10"></div>
         <LayoutTextFlipDemo/>
         <ThreeDCardDemo/>
+        <WobbleCardDemo/>
     </div>
   );
 }
