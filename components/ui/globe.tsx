@@ -3,7 +3,7 @@
 import React, { useEffect, useMemo, useRef } from "react";
 import dynamic from "next/dynamic";
 import Globe from "globe.gl";
-import worldGeo from "@/data/globe.json" assert { type: "json" };
+import worldGeo from "@/data/globe.json";
 
 type ArcDatum = {
   order?: number;
