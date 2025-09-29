@@ -5,6 +5,7 @@ import { InfiniteMovingCardsDemo } from "@/components/InfiniteCard";
 import ParallaxZoomGallery from "@/components/ParallaxZoomGallery";
 import { NavbarDemo } from "@/components/ResizableNavbar";
 import { WobbleCardDemo } from "@/components/WobbleCard";
+import { GlobeDemo } from "@/components/GlobeDemo";
 import Image from "next/image";
 
 export default function Home() {
@@ -16,9 +17,10 @@ export default function Home() {
         <LayoutTextFlipDemo/>
         <ThreeDCardDemo/>
         <WobbleCardDemo/>
+        <GlobeDemo/>
         <ParallaxZoomGallery/>
         <InfiniteMovingCardsDemo/>
     </div>
-    
+
   );
 }
