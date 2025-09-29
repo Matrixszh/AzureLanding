@@ -1,6 +1,7 @@
 import { ThreeDCardDemo } from "@/components/3Dcard";
 import { LayoutTextFlipDemo } from "@/components/FlipText";
 import { HeroParallaxDemo } from "@/components/HeroParallax";
+import { InfiniteMovingCardsDemo } from "@/components/InfiniteCard";
 import { NavbarDemo } from "@/components/ResizableNavbar";
 import { WobbleCardDemo } from "@/components/WobbleCard";
 import Image from "next/image";
@@ -14,6 +15,7 @@ export default function Home() {
         <LayoutTextFlipDemo/>
         <ThreeDCardDemo/>
         <WobbleCardDemo/>
+        <InfiniteMovingCardsDemo/>
     </div>
   );
 }
