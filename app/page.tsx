@@ -11,6 +11,7 @@ import ParallaxZoomGallery from "@/components/ParallaxZoomGallery";
 import { FocusCardsDemo } from "@/components/FocusCards";
 import { SignupFormDemo } from "@/components/Form";
 import { Vortex } from "@/components/ui/vortex";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -37,6 +38,8 @@ export default function Home() {
     <FocusCardsDemo/>
     </div>   
     <SignupFormDemo/>
+    <Footer/>
     </div>
+    
   );
 }
