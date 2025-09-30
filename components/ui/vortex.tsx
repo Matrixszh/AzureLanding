@@ -224,8 +224,7 @@ const animationFrameId = useRef<number | null>(null);
 
   const handleResize = () => {
     const canvas = canvasRef.current;
-    const ctx = canvas?.getContext("2d");
-    if (canvas && ctx) {
+    if (canvas) {
       resize(canvas);
     }
   };
