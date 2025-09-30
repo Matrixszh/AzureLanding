@@ -10,6 +10,7 @@ import { VortexDemo } from "@/components/BackgroundVortex";
 import ParallaxZoomGallery from "@/components/ParallaxZoomGallery";
 import { FocusCardsDemo } from "@/components/FocusCards";
 import { SignupFormDemo } from "@/components/Form";
+import { Vortex } from "@/components/ui/vortex";
 
 export default function Home() {
   return (
@@ -28,6 +29,9 @@ export default function Home() {
         </div>
         <GlobeDemo />
       </section>
+    </div>
+    <div className="w-full min-h-screen pb-30 ">
+    <VortexDemo/>
     </div>
     <div className="w-full min-h-screen pb-30 ">
     <FocusCardsDemo/>

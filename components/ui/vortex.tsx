@@ -43,7 +43,7 @@ export const Vortex = (props: VortexProps) => {
   const xOff = 0.00125;
   const yOff = 0.00125;
   const zOff = 0.0005;
-  const backgroundColor = props.backgroundColor || "transparent";
+  const backgroundColor = props.backgroundColor || "transaparent";
 
   let tick = 0;
 
@@ -256,9 +256,15 @@ export const Vortex = (props: VortexProps) => {
   }, []);
 
   return (
-    <div ref={containerRef} className={cn(props.containerClassName)}>
-      <canvas ref={canvasRef} className={cn(props.className)} />
+  <div ref={containerRef} className={cn(props.containerClassName)} style={{ position: "relative" }}>
+    <canvas
+      ref={canvasRef}
+      className={cn(props.className)}
+      style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+    />
+    <div style={{ position: "relative", zIndex: 1 }}>
       {props.children}
     </div>
-  );
+  </div>
+);
 };
