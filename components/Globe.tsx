@@ -38,13 +38,12 @@ export function GlobeDemo() {
     const context = canvas.getContext("2d");
 
     if (!context) {
-      return () => {
-        if (container && rendererRef.current) {
-          container.removeChild(rendererRef.current.domElement);
-        }
-        renderer.dispose();
-        sphereGeometry.dispose();
-      };
+      if (container.contains(renderer.domElement)) {
+        container.removeChild(renderer.domElement);
+      }
+      renderer.dispose();
+      sphereGeometry.dispose();
+      return;
     }
 
     context.fillStyle = "#000000";
@@ -85,7 +84,8 @@ export function GlobeDemo() {
         [-161, 68],
         [-156, 71],
         [-154, 70],
-        [-152, 69],\n        [-150, 68],
+        [-152, 69],
+        [-150, 68],
         [-140, 69],
         [-135, 68],
         [-130, 70],
@@ -694,5 +694,5 @@ export function GlobeDemo() {
     };
   }, []);
 
-  return <div ref={containerRef} className="globe-display w-full h-full" />;
+  return <div ref={containerRef} className="globe-container w-full h-full" />;
 }
