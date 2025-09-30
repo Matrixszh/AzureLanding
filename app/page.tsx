@@ -14,7 +14,7 @@ export default function Home() {
       <HeroParallaxDemo />
       <div className="pb-10" />
       <LayoutTextFlipDemo />
-      <ThreeDCardDemo />
+      <CardsShowcase />
       <WobbleCardDemo />
       <InfiniteMovingCardsDemo />
       <section className="w-full max-w-5xl h-[28rem] md:h-[32rem] lg:h-[36rem]">
