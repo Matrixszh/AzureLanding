@@ -229,6 +229,13 @@ const animationFrameId = useRef<number | null>(null);
       }
     }
 
+    const handleResize = () => {
+      const canvasElement = canvasRef.current;
+      if (canvasElement) {
+        resize(canvasElement);
+      }
+    };
+
     window.addEventListener("resize", handleResize);
 
     return () => {
