@@ -48,7 +48,7 @@ const animationFrameId = useRef<number | null>(null);
   const rand = (n: number): number => n * Math.random();
   const randRange = (n: number): number => n - rand(2 * n);
   const fadeInOut = (t: number, m: number): number => {
-    let hm = 0.5 * m;
+    const hm = 0.5 * m;
     return Math.abs(((t + hm) % m) - hm) / hm;
   };
   const lerp = (n1: number, n2: number, speed: number): number =>
