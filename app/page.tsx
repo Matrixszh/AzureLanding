@@ -3,7 +3,7 @@ import { LayoutTextFlipDemo } from "@/components/FlipText";
 import { HeroParallaxDemo } from "@/components/HeroParallax";
 import { InfiniteMovingCardsDemo } from "@/components/InfiniteCard";
 import { NavbarDemo } from "@/components/ResizableNavbar";
-import { ThreeDCardDemo } from "@/components/3Dcard";
+import { ThreeDCardDemo as CardsShowcase } from "@/components/3Dcard";
 import { GlobeDemo } from "@/components/Globe";
 import { WobbleCardDemo } from "@/components/WobbleCard";
 
