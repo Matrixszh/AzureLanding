@@ -179,13 +179,13 @@ export function GlobeDemo() {
     scene.add(wireframe);
 
     const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCount = 1500;
+    const particlesCount = 15000;
     const posArray = new Float32Array(particlesCount * 3);
 
     for (let i = 0; i < particlesCount; i++) {
       const theta = Math.random() * Math.PI * 2;
       const phi = Math.acos(2 * Math.random() - 1);
-      const radius = 1.05 + Math.random() * 0.15;
+      const radius = 1.35 + Math.random() * 0.15;
 
       posArray[i * 3] = radius * Math.sin(phi) * Math.cos(theta);
       posArray[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
@@ -196,7 +196,7 @@ export function GlobeDemo() {
 
     const particlesMaterial = new THREE.PointsMaterial({
       size: 0.008,
-      color: 0xffffff,
+      color: 0x1589FF,
       transparent: true,
       opacity: 0.4,
     });
