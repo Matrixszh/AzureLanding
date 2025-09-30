@@ -54,20 +54,6 @@ const animationFrameId = useRef<number | null>(null);
   const lerp = (n1: number, n2: number, speed: number): number =>
     (1 - speed) * n1 + speed * n2;
 
-  const setup = () => {
-    const canvas = canvasRef.current;
-    const container = containerRef.current;
-    if (canvas && container) {
-      const ctx = canvas.getContext("2d");
-
-      if (ctx) {
-        resize(canvas);
-        initParticles();
-        draw(canvas, ctx);
-      }
-    }
-  };
-
   const initParticles = () => {
     tick = 0;
     particleProps = new Float32Array(particlePropsLength);
