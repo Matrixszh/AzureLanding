@@ -117,14 +117,7 @@ export function ThreeDCardDemo() {
   return (
     <div className="w-full min-h-screen  py-12 px-4">
       {/* Header Section */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold text-neutral-800 dark:text-white mb-4">
-          3D Card Collection
-        </h1>
-        <p className="text-lg text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
-          Experience our beautiful collection of interactive 3D cards with stunning hover effects
-        </p>
-      </div>
+
 
       {/* Cards Grid with Proper Spacing */}
       <div className="max-w-7xl mx-auto">
