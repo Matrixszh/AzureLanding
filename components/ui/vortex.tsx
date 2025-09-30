@@ -61,7 +61,7 @@ const animationFrameId = useRef<number | null>(null);
       const ctx = canvas.getContext("2d");
 
       if (ctx) {
-        resize(canvas, ctx);
+        resize(canvas);
         initParticles();
         draw(canvas, ctx);
       }
