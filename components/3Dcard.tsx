@@ -138,11 +138,7 @@ export function ThreeDCardDemo() {
       </div>
 
       {/* Footer Section */}
-      <div className="text-center mt-16">
-        <p className="text-neutral-500 dark:text-neutral-400">
-          Hover over any card to see the 3D perspective effect in action
-        </p>
-      </div>
+
     </div>
   );
 }
