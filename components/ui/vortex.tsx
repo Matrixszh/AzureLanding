@@ -216,7 +216,19 @@ const animationFrameId = useRef<number | null>(null);
   };
 
   useEffect(() => {
-    setup();
+    const canvas = canvasRef.current;
+    const container = containerRef.current;
+
+    if (canvas && container) {
+      const ctx = canvas.getContext("2d");
+
+      if (ctx) {
+        resize(canvas);
+        initParticles();
+        draw(canvas, ctx);
+      }
+    }
+
     window.addEventListener("resize", handleResize);
 
     return () => {
