@@ -30,10 +30,10 @@ export default function Home() {
         <GlobeDemo />
       </section>
     </div>
-    <div className="w-full min-h-screen pb-30 ">
+    <div className="w-full min-h-screen ">
     <VortexDemo/>
     </div>
-    <div className="w-full min-h-screen pb-30 ">
+    <div className="w-full min-h-screen pb-20">
     <FocusCardsDemo/>
     </div>   
     <SignupFormDemo/>
