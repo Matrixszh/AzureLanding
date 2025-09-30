@@ -676,6 +676,7 @@ export function GlobeDemo() {
     return () => {
       if (frameRef.current !== null) {
         cancelAnimationFrame(frameRef.current);
+        frameRef.current = null;
       }
 
       window.removeEventListener("mousemove", handleMouseMove);
