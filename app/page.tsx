@@ -29,7 +29,6 @@ export default function Home() {
         <GlobeDemo />
       </section>
     </div>
- 
     <div className="w-full min-h-screen pb-30 ">
     <FocusCardsDemo/>
     </div>   
