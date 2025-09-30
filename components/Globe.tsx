@@ -686,6 +686,7 @@ export function GlobeDemo() {
       }
 
       renderer.dispose();
+      rendererRef.current = null;
       sphereGeometry.dispose();
       wireframeGeometry.dispose();
       wireframeMaterial.dispose();
