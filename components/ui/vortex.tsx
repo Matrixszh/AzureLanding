@@ -81,17 +81,15 @@ const animationFrameId = useRef<number | null>(null);
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    let x, y, vx, vy, life, ttl, speed, radius, hue;
-
-    x = rand(canvas.width);
-    y = center[1] + randRange(rangeY);
-    vx = 0;
-    vy = 0;
-    life = 0;
-    ttl = baseTTL + rand(rangeTTL);
-    speed = baseSpeed + rand(rangeSpeed);
-    radius = baseRadius + rand(rangeRadius);
-    hue = baseHue + rand(rangeHue);
+    const x = rand(canvas.width);
+    const y = center[1] + randRange(rangeY);
+    const vx = 0;
+    const vy = 0;
+    const life = 0;
+    const ttl = baseTTL + rand(rangeTTL);
+    const speed = baseSpeed + rand(rangeSpeed);
+    const radius = baseRadius + rand(rangeRadius);
+    const hue = baseHue + rand(rangeHue);
 
     particleProps.set([x, y, vx, vy, life, ttl, speed, radius, hue], i);
   };
