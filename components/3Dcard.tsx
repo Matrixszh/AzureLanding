@@ -6,44 +6,54 @@ import { CardBody, CardContainer, CardItem  } from "@/components/ui/3d-card";
 // Card data array
 const cardData = [
   {
-    title: "Make things float in air",
-    description: "Hover over this card to unleash the power of CSS perspective",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Azure Cloud Migration",
+    description: "Seamless migration of workloads, applications, and infrastructure to Microsoft Azure, ensuring minimal downtime, enhanced security, and cost efficiency",
+    image: "/acurecm.png",
     primaryButton: "Try now →",
     secondaryButton: "Sign up"
   },
   {
-    title: "Interactive 3D Effects",
-    description: "Experience smooth animations and perspective transformations",
-    image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Power BI Solutions",
+    description: "Custom-built interactive dashboards, data visualizations, and business intelligence tools to unlock actionable insights from complex datasets, enabling informed decision-making.",
+    image: "/bi.png",
     primaryButton: "Explore →",
     secondaryButton: "Learn More"
   },
   {
-    title: "Modern UI Components",
-    description: "Beautiful and responsive card components for your next project",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    primaryButton: "Get Started →",
-    secondaryButton: "Download"
+    title: "Data Migration & ETL Processes",
+    description: "Secure, efficient data transfers across systems and platforms, coupled with robust Extract, Transform, Load (ETL) processes to ensure data accuracy, compliance, and scalability.",
+    image: "/dm.png",
   },
   {
-    title: "Responsive Design",
-    description: "Perfectly adapted for all screen sizes and devices",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    primaryButton: "View Demo →",
-    secondaryButton: "Contact Us"
+    title: "DevOps Services",
+    description: "Streamlined development and operations through CI/CD pipelines, automation, containerization, and infrastructure-as-code, optimizing software delivery and system reliability in cloud environments.",
+    image: "/devop.png",
   },
   {
-    title: "CSS Perspective Magic",
-    description: "Advanced CSS transforms that bring your interfaces to life",
-    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: ".NET Development",
+    description: "Custom development and modernization of applications using the .NET framework, delivering scalable, high-performance solutions tailored to business needs.",
+    image: "/net.png",
     primaryButton: "Discover →",
     secondaryButton: "Book Demo"
   },
   {
-    title: "Next.js Integration",
-    description: "Seamlessly integrate with your Next.js and React applications",
-    image: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Consulting Services",
+    description: "Strategic IT advisory, including digital transformation, process optimization, and system architecture, to align technology with business objectives.",
+    image: "/conserv.png",
+    primaryButton: "Install →",
+    secondaryButton: "Documentation"
+  },
+    {
+    title: "Recruiting Services",
+    description: "Specialized talent acquisition for IT roles, connecting clients with top professionals in cloud, data, BI, ERP, CRM, DevOps, and .NET domains to build high-performing teams.",
+    image: "/recr.png",
+    primaryButton: "Install →",
+    secondaryButton: "Documentation"
+  },  
+  {
+    title: "Dynamics 365 & ERP/CRM",
+    description: "Expert implementation, customization, and integration of Microsoft Dynamics 365 and other ERP/CRM platforms to streamline operations, enhance customer relationships, and drive business growth.",
+    image: "/365.png",
     primaryButton: "Install →",
     secondaryButton: "Documentation"
   }
@@ -53,15 +63,11 @@ const cardData = [
 function SingleCard({ 
   title, 
   description, 
-  image, 
-  primaryButton, 
-  secondaryButton 
+  image
 }: {
   title: string;
   description: string;
   image: string;
-  primaryButton: string;
-  secondaryButton: string;
 }) {
   return (
     <CardContainer 
@@ -92,20 +98,6 @@ function SingleCard({
           />
         </CardItem>
         <div className="flex justify-between items-center mt-6">
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors border border-gray-200 dark:border-gray-700"
-          >
-            {primaryButton}
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
-          >
-            {secondaryButton}
-          </CardItem>
         </div>
       </CardBody>
     </CardContainer>
@@ -129,8 +121,6 @@ export function ThreeDCardDemo() {
                 title={card.title}
                 description={card.description}
                 image={card.image}
-                primaryButton={card.primaryButton}
-                secondaryButton={card.secondaryButton}
               />
             </div>
           ))}
