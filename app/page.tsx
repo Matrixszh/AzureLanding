@@ -39,9 +39,7 @@ export default function Home() {
  
     <BackgroundBeamsDemo/>
     </div>
-    <div className="w-full min-h-screen pb-20">
-    <FocusCardsDemo/>
-    </div>   
+  
     <SignupFormDemo/>
     <Footer/>
     </div>
