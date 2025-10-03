@@ -13,6 +13,7 @@ import { SignupFormDemo } from "@/components/Form";
 import { Vortex } from "@/components/ui/vortex";
 import Footer from "@/components/Footer";
 import { BackgroundBeamsDemo } from "@/components/LampSection";
+import { HoverBorderGradientDemo } from "@/components/Buttonh1";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <div className="pb-10" />
       <LayoutTextFlipDemo />
       <CardsShowcase />
+        <HoverBorderGradientDemo/>
       <WobbleCardDemo />
         <section className="w-full max-w-5xl h-[28rem] md:h-[32rem] lg:h-[36rem]">
         <div>

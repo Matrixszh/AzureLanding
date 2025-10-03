@@ -43,7 +43,7 @@ export function SignupFormDemo() {
   return (
     <div className="shadow-input mx-auto w-full max-w-7xl rounded-none p-4 md:rounded-2xl md:p-8 " id="form">
       <h2 className="pb-4 text-5xl font-bold justify-center items-center flex text-neutral-800 dark:text-neutral-200">
-        Welcome to Aceternity
+        Contact Us Now
       </h2>
 
 
@@ -115,7 +115,7 @@ export function SignupFormDemo() {
           className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
           type="submit"
         >
-          Sign up &rarr;
+          Submit &rarr;
           <BottomGradient />
         </button>
       </form>
