@@ -12,6 +12,7 @@ import { FocusCardsDemo } from "@/components/FocusCards";
 import { SignupFormDemo } from "@/components/Form";
 import { Vortex } from "@/components/ui/vortex";
 import Footer from "@/components/Footer";
+import { BackgroundBeamsDemo } from "@/components/LampSection";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <WobbleCardDemo />
         <section className="w-full max-w-5xl h-[28rem] md:h-[32rem] lg:h-[36rem]">
         <div>
-          <h1 className="text-justify flex text-4xl lg:text-5xl font-medium justify-center items-center">Global Coverage</h1>
+          <h1 className="text-justify flex text-4xl lg:text-5xl font-bold justify-center items-center">Global Coverage</h1>
           <h1 className="mt-4 text-center text-lg text-neutral-600 dark:text-neutral-400">We serve small to medium-sized enterprises (SMEs) and growing startups across industries such as finance, healthcare, retail, and manufacturing. Our clients include businesses pursuing digital modernization, legacy system upgrades, or scalable, cloud-based technology solutions. With a client-centric approach, we deliver tailored solutions that foster innovation, efficiency, and measurable results.</h1>
         </div>
         <GlobeDemo />
@@ -33,6 +34,10 @@ export default function Home() {
     </div>
     <div className="w-full min-h-screen ">
     <VortexDemo/>
+    </div>
+    <div>
+ 
+    <BackgroundBeamsDemo/>
     </div>
     <div className="w-full min-h-screen pb-20">
     <FocusCardsDemo/>
