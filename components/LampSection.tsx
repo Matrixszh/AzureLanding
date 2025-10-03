@@ -4,7 +4,7 @@ import { BackgroundBeams } from "@/components/ui/lamp";
 
 export function BackgroundBeamsDemo() {
   return (
-    <div>
+    <div id="blogs">
       <h1 className="relative z-10 text-4xl md:text-5xl  bg-clip-text text-white  text-center font-sans font-bold ">
           Blogs
         </h1>
