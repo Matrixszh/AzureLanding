@@ -52,7 +52,7 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
+    useTransform(scrollYProgress, [0, 0.2], [-700, 100]),
     springConfig
   );
 
@@ -69,7 +69,7 @@ export const HeroParallax = ({
       <Header />
 
       {/* 3D context inside; outer remains the clipping boundary */}
-      <div className="relative [perspective:1000px] [transform-style:preserve-3d]">
+      <div className="relative [perspective:2000px] [transform-style:preserve-3d]">
         <motion.div
           style={{
             rotateX,
