@@ -34,7 +34,7 @@ export default function Home() {
         <GlobeDemo />
       </section>
     </div>
-    <div className="w-full min-h-screen ">
+    <div className="w-full min-h-screen pt-[10vh]">
     <VortexDemo/>
     </div>
     <div>

@@ -54,7 +54,7 @@ export function SignupFormDemo() {
             <Input
               id="firstname"
               type="text"
-              placeholder="Tyler"
+              placeholder=""
               value={formData.firstname}
               onChange={handleChange}
               required
@@ -65,7 +65,7 @@ export function SignupFormDemo() {
             <Input
               id="lastname"
               type="text"
-              placeholder="Durden"
+              placeholder=""
               value={formData.lastname}
               onChange={handleChange}
               required
@@ -78,7 +78,7 @@ export function SignupFormDemo() {
           <Input
             id="email"
             type="email"
-            placeholder="projectmayhem@fc.com"
+            placeholder=""
             value={formData.email}
             onChange={handleChange}
             required
@@ -90,7 +90,7 @@ export function SignupFormDemo() {
           <Input
             id="phone"
             type="tel"
-            placeholder="+1 555 555 5555"
+            placeholder=""
             value={formData.phone}
             onChange={handleChange}
             required
@@ -101,7 +101,7 @@ export function SignupFormDemo() {
   <Label htmlFor="description">Description</Label>
   <textarea
     id="description"
-    placeholder="Describe yourself..."
+    placeholder=""
     value={formData.description}
     onChange={handleChange}
     className="w-full rounded  p-2 text-sm dark:bg-neutral-800 dark:text-white"

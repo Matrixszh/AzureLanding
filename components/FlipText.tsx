@@ -12,7 +12,7 @@ export function LayoutTextFlipDemo() {
         />
       </motion.div>
       <p className="mt-4 text-center text-lg text-neutral-600 dark:text-neutral-400">
-        Zhtoton Technologies LLC is a forward-thinking IT services firm dedicated to driving digital transformation and delivering top-tier talent solutions. We empower businesses to achieve operational excellence and innovation through cutting-edge technology and strategic expertise.The primary goal of the Zhtoton Technologies LLC website is to drive lead generation while establishing a robust brand presence. The website will showcase our comprehensive services, including Azure cloud migration, Power BI solutions, data migration and ETL processes, Dynamics 365 and ERP/CRM implementations, DevOps services, .NET development, consulting, and recruiting, in a clear and client-centric manner. By highlighting our expertise and success stories, the website will position us as a trusted partner for digital transformation and talent solutions. Additionally, it will serve as a platform for thought leadership, sharing insights on cloud technology, data analytics, ETL processes, DevOps practices, .NET development, and ERP/CRM trends to engage and educate our target audience of SMEs and startups, ultimately converting visitors into clients.
+        Zhtoton Technologies LLC is a forward-thinking IT firm driving digital transformation and delivering talent solutions. Our website highlights expertise in Azure cloud, Power BI, ETL, Dynamics 365, DevOps, .NET, consulting, and recruiting—engaging SMEs and startups through insights and success stories to convert visitors into clients.
       </p>
     </div>
   );
