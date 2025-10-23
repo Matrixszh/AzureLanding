@@ -120,7 +120,7 @@ export const Header = () => {
         Empowering Businesses <br /> Through Digital Transformation
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        Zhtoton Technologies LLC delivers cutting-edge IT services and talent solutions to help SMEs and startups achieve innovation and operational excellence. From cloud migration to ERP/CRM and DevOps, we are your trusted partner in digital growth.
+        We deliver cutting-edge IT services and talent solutions to help SMEs and startups achieve innovation and operational excellence. From cloud migration to ERP/CRM and DevOps, we are your trusted partner in digital growth.
       </p>
       <HoverBorderGradientDemo/>
     </div>
@@ -147,7 +147,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-50 w-50 md:h-96 md:w-[30rem] relative shrink-0"
+      className="group/product h-50 w-50 md:h-[70vh] md:w-[30rem] relative shrink-0"
     >
       <a className="block group-hover/product:shadow-2xl">
         <img
