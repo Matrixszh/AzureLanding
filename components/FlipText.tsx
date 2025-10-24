@@ -11,7 +11,7 @@ export function LayoutTextFlipDemo() {
           words={["Cloud Migration", "Power BI Solutions", "Data Migration","DevOps Services",".NET Developmen","Consulting Services","Consulting Services",  "Recruiting Services"]}
         />
       </motion.div>
-      <p className="mt-4 text-center text-lg text-neutral-600 dark:text-neutral-400">
+      <p className="mt-4 text-center font-light text-lg text-neutral-600 dark:text-white">
         Zhtoton Technologies LLC is a forward-thinking IT firm driving digital transformation and delivering talent solutions. Our website highlights expertise in Azure cloud, Power BI, ETL, Dynamics 365, DevOps, .NET, consulting, and recruiting—engaging SMEs and startups through insights and success stories to convert visitors into clients.
       </p>
     </div>

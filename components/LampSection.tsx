@@ -5,7 +5,7 @@ import { BackgroundBeams } from "@/components/ui/lamp";
 export function BackgroundBeamsDemo() {
   return (
     <div id="blogs">
-      <h1 className="relative z-10 text-4xl md:text-5xl bg-gradient-to-b from-gray-500 via-gray-400 to-gray-100 bg-clip-text text-transparent  text-center font-sans font-bold ">
+      <h1 className="relative z-10  py-4 text-4xl md:text-6xl bg-gradient-to-b from-gray-500 via-gray-400 to-gray-100 bg-clip-text text-transparent  text-center font-sans font-bold ">
           Blogs
         </h1>
     <div className="h-[80vh] w-full rounded-md bg-neutral-950 relative flex flex-col lg:flex-row items-center justify-center antialiased">

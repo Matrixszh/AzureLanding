@@ -42,7 +42,7 @@ export function SignupFormDemo() {
 
   return (
     <div className="shadow-input mx-auto w-full max-w-7xl rounded-none p-4 md:rounded-2xl md:p-8 " id="form">
-      <h2 className="pb-4 text-5xl font-bold justify-center items-center flex text-neutral-800 dark:text-neutral-200">
+      <h2 className="pb-4 text-3xl md:text-6xl font-bold justify-center items-center flex bg-gradient-to-b from-gray-500 via-gray-400 to-gray-100 bg-clip-text text-transparent">
         Contact Us Now
       </h2>
 
