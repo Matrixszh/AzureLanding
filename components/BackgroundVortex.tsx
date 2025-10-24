@@ -4,10 +4,10 @@ import { InfiniteMovingCardsDemo } from "@/components/InfiniteCard";
 
 export function VortexDemo() {
   return (
-    <div className="w-[100vw] mx-auto rounded-md h-[100vh] overflow-hidden">
+    <div className="w-[100vw] mx-auto rounded-md h-full overflow-hidden">
       <Vortex
         backgroundColor="transparent"
-        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-[100vh]"
+        className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
       >
         <InfiniteMovingCardsDemo/>
       </Vortex>
